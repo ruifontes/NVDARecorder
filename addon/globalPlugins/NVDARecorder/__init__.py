@@ -16,6 +16,10 @@ import globalVars
 import ctypes
 import time
 import addonHandler
+
+# For update process
+from . update import *
+
 # For translation
 addonHandler.initTranslation()
 
@@ -27,34 +31,41 @@ contents = ""
 _NRIniFile = os.path.join(globalVars.appArgs.configPath, "NVDARecord.txt")
 
 def getSequenceText(sequence):
-  return speechViewer.SPEECH_ITEM_SEPARATOR.join([x for x in sequence if isinstance(x, str)])
+	return speechViewer.SPEECH_ITEM_SEPARATOR.join([x for x in sequence if isinstance(x, str)])
 
 def mySpeak(sequence, *args, **kwargs):
-  global contents
-  oldSpeak(sequence, *args, **kwargs)
-  text = getSequenceText(sequence)
-  if text:
-    if "\n" not in text:
-      text += "\n"
-    contents += text
+	global contents
+	oldSpeak(sequence, *args, **kwargs)
+	text = getSequenceText(sequence)
+	if text:
+		if "\n" not in text:
+			text += "\n"
+		contents += text
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-  def script_record(self, gesture):
-    global start
-    start = not start
-    if not start:
-      speech.speak = oldSpeak
-      global contents
-      with open(_NRIniFile, "w", encoding = "utf-8") as file:
-        file.write(contents)
-      contents = ""
-      ui.message(_("Recording stopped"))
-      time.sleep(0.4)
-      z = ctypes.windll.shell32.ShellExecuteW(None, "open", _NRIniFile, None, None, 10)
-    else:
-      ui.message(_("Start recording"))
-      speech.speak = mySpeak
+	# Creating the constructor of the newly created GlobalPlugin class.
+	def __init__(self):
+		# Call of the constructor of the parent class.
+		super(GlobalPlugin, self).__init__()
+		_MainWindows = Initialize()
+		_MainWindows.start()
 
-  script_record.__doc__ = _("Activate/deactivate recording on NVDARecorder")
+	def script_record(self, gesture):
+		global start
+		start = not start
+		if not start:
+			speech.speak = oldSpeak
+			global contents
+			with open(_NRIniFile, "w", encoding = "utf-8") as file:
+				file.write(contents)
+			contents = ""
+			ui.message(_("Recording stopped"))
+			time.sleep(0.4)
+			z = ctypes.windll.shell32.ShellExecuteW(None, "open", _NRIniFile, None, None, 10)
+		else:
+			ui.message(_("Start recording"))
+			speech.speak = mySpeak
 
-  __gestures = { "kb:alt+numpadplus":"record" }
+	script_record.__doc__ = _("Activate/deactivate recording on NVDARecorder")
+
+	__gestures = {"kb:alt+numpadplus":"record" }

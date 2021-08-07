@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NVDARecorder\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-06-06 00:36+0100\n"
-"PO-Revision-Date: 2021-06-06 00:45+0100\n"
+"POT-Creation-Date: 2021-08-07 04:30+0100\n"
+"PO-Revision-Date: 2021-08-07 04:45+0100\n"
 "Last-Translator: Rui Fontes  <rui.fontes@tiflotecnia.com>\n"
 "Language-Team: Equipa portuguesa do NVDA (Ângelo Abrantes <ampa4374@gmail."
 "com> e Rui Fontes <rui.fontes@tiflotecnia.com>)\n"
@@ -23,17 +23,41 @@ msgstr ""
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:51
+#: addon\globalPlugins\NVDARecorder\__init__.py:62
 msgid "Recording stopped"
 msgstr "Ggravação parada"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:55
+#: addon\globalPlugins\NVDARecorder\__init__.py:66
 msgid "Start recording"
 msgstr "Iniciar a gravação"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:58
+#: addon\globalPlugins\NVDARecorder\__init__.py:69
 msgid "Activate/deactivate recording on NVDARecorder"
 msgstr "Activar/desactivar a gravação do Gravador do NVDA"
+
+#. Translators: Message dialog box to ask user if wants to update.
+#: addon\globalPlugins\NVDARecorder\update.py:84
+msgid ""
+"It is available a new version of this add-on.\n"
+" Do you want to update?"
+msgstr ""
+"Está disponível uma nova versão deste extra.\n"
+"Quer actualizar?"
+
+#. Translators: Message dialog box to inform user that the add-on is not compatible
+#: addon\globalPlugins\NVDARecorder\update.py:114
+msgid ""
+"This new version of this add-on is not compatible with your version of "
+"NVDA.\n"
+" The update process will be terminated."
+msgstr ""
+"Esta nova versão deste extra não é compatível com a sua versão do NVDA.\n"
+" O processo de actualização será terminado."
+
+#. Translators: Checkbox name in the configuration dialog
+#: addon\globalPlugins\NVDARecorder\update.py:133
+msgid "Check for updates at startup"
+msgstr "Verificar actualizações ao iniciar"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on

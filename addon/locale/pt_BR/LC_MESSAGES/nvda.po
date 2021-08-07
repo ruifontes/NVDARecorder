@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wintenApps\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-06-06 00:36+0100\n"
-"PO-Revision-Date: 2021-06-06 00:37+0100\n"
+"POT-Creation-Date: 2021-08-07 04:30+0100\n"
+"PO-Revision-Date: 2021-08-07 04:46+0100\n"
 "Last-Translator: Rui Fontes  <rui.fontes@tiflotecnia.com>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clever92000@yahoo.com.br>\n"
@@ -19,18 +19,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 3.0\n"
+"X-Poedit-Bookmarks: -1,4,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:51
+#: addon\globalPlugins\NVDARecorder\__init__.py:62
 msgid "Recording stopped"
 msgstr "A gravação parou"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:55
+#: addon\globalPlugins\NVDARecorder\__init__.py:66
 msgid "Start recording"
 msgstr "Comece a gravar"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:58
+#: addon\globalPlugins\NVDARecorder\__init__.py:69
 msgid "Activate/deactivate recording on NVDARecorder"
 msgstr "Ativar/desativar a gravação no NVDARecorder"
+
+#. Translators: Message dialog box to ask user if wants to update.
+#: addon\globalPlugins\NVDARecorder\update.py:84
+msgid ""
+"It is available a new version of this add-on.\n"
+" Do you want to update?"
+msgstr ""
+"Está disponível uma nova versão deste suplemento.\n"
+" Você deseja atualizar?"
+
+#. Translators: Message dialog box to inform user that the add-on is not compatible
+#: addon\globalPlugins\NVDARecorder\update.py:114
+msgid ""
+"This new version of this add-on is not compatible with your version of "
+"NVDA.\n"
+" The update process will be terminated."
+msgstr ""
+"Esta nova versão deste suplemento não é compatível com sua versão do NVDA.\n"
+" O processo de atualização será encerrado."
+
+#. Translators: Checkbox name in the configuration dialog
+#: addon\globalPlugins\NVDARecorder\update.py:133
+msgid "Check for updates at startup"
+msgstr "Verificar actualizações ao iniciar"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
