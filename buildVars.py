@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("""Record in a text document all the speechs of NVDA, except in SayAll. Turn on/off with Alt+NumPad Plus."""),
 	# version
-	"addon_version": "21.08",
+	"addon_version": "21.08.08",
 	# Author(s)
 	"addon_author": "Rui Fontes <rui.fontes@tiflotecnia.com> and Ângelo Abrantes <ampa4374@gmail.com>",
 	# URL for the add-on documentation support

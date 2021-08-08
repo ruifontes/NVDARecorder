@@ -22,4 +22,4 @@ The check for a new version will be executed everytime NVDA is loaded.
 If you do not want this, go to NVDA, Preferences, Options and in the add-on category uncheck the check box.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08/NVDARecorder-1.4.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.08/NVDARecorder-21.08.08.nvda-addon

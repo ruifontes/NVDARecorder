@@ -22,4 +22,4 @@ A verificação de existência de nova versão será executada cada vez que o NV
 Se não desejar que isso aconteça, vá ao menu do NVDA, Preferências, Configurações e na categoria do extra desmarque a caixa de verificação.
 
 
-[1]: https://github.com/ruifontes/wordCount/releases/download/1.4/wordCount-1.4.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.08/NVDARecorder-21.08.08.nvda-addon
