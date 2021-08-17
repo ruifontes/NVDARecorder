@@ -13,13 +13,11 @@ import speechViewer
 import ui
 import os
 import globalVars
-import ctypes
 import time
+from scriptHandler import script
 import addonHandler
-
 # For update process
 from . update import *
-
 # For translation
 addonHandler.initTranslation()
 
@@ -47,9 +45,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def __init__(self):
 		# Call of the constructor of the parent class.
 		super(GlobalPlugin, self).__init__()
+		if globalVars.appArgs.secure:
+			return
+		# For update process
 		_MainWindows = Initialize()
 		_MainWindows.start()
 
+	@script(
+	# For translators: Message to be announced during Keyboard Help
+	description = _("Activate/deactivate recording on NVDARecorder"),
+	gesture = "kb:alt+numpadplus")
 	def script_record(self, gesture):
 		global start
 		start = not start
@@ -61,11 +66,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			contents = ""
 			ui.message(_("Recording stopped"))
 			time.sleep(0.4)
-			z = ctypes.windll.shell32.ShellExecuteW(None, "open", _NRIniFile, None, None, 10)
+			os.startfile(_NRIniFile)
 		else:
 			ui.message(_("Start recording"))
 			speech.speak = mySpeak
-
-	script_record.__doc__ = _("Activate/deactivate recording on NVDARecorder")
-
-	__gestures = {"kb:alt+numpadplus":"record" }

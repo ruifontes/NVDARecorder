@@ -21,4 +21,4 @@ La comprobación de una nueva versión se ejecutará cada vez que se cargue NVDA
 Si no quieres esto, ve a NVDA, Preferencias, Opciones y en la categoría de complementos desmarca la casilla.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.08/NVDARecorder-21.08.08.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.17/NVDARecorder-21.08.17.nvda-addon

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'NVDARecorder' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'NVDARecorder' '21.08'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2021-08-08 18:33+0200\n"
+"PO-Revision-Date: 2021-08-08 22:54+0200\n"
+"Language-Team: Iván Novegil Cancelas <ivan.novegil@nvda.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: gl\n"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:62
+msgid "Recording stopped"
+msgstr "Gravación detida"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:66
+msgid "Start recording"
+msgstr "Gravación iniciada"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:69
+msgid "Activate/deactivate recording on NVDARecorder"
+msgstr "Activar/desactivar gravación en NVDARecorder"
+
+#. Translators: Message dialog box to ask user if wants to update.
+#: addon\globalPlugins\NVDARecorder\update.py:95
+msgid ""
+"It is available a new version of this add-on.\n"
+" Do you want to update?"
+msgstr ""
+"Está dispoñible unha nova versión deste complemento.\n"
+" Queres actualizar?"
+
+#. because is compatible
+#. because is incompatible
+#. Translators: Message dialog box to inform user that the add-on is not compatible
+#: addon\globalPlugins\NVDARecorder\update.py:125
+msgid ""
+"This new version of this add-on is not compatible with your version of "
+"NVDA.\n"
+" The update process will be terminated."
+msgstr ""
+"Esta nova versión deste complemento non é compatible coa túa versión de "
+"NVDA.\n"
+" O proceso de actualización rematarase."
+
+#. Translators: Checkbox name in the configuration dialog
+#: addon\globalPlugins\NVDARecorder\update.py:144
+msgid "Check for updates at startup"
+msgstr "Comprobar actualizacións ó iniciarse"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "NVDA recorder"
+msgstr "Gravadora NVDA"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Record in a text document all the speechs of NVDA, except in SayAll. Turn on/"
+"off with Alt+NumPad Plus."
+msgstr ""
+"Gravar nun documento de texto tódolos discursos de NVDA, agás en lectura "
+"continua. Activar/desactivar con Alt+Máis TecladoNumérico."
