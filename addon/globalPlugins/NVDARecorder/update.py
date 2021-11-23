@@ -108,10 +108,13 @@ class AddonFlow(Thread):
 		if os.path.exists(directory) == False:
 			os.mkdir(directory)
 		file = os.path.join(directory, urlN)
-		opener = urllib.request.build_opener()
-		opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-		urllib.request.install_opener(opener)
-		urllib.request.urlretrieve(urlName, file)
+		req = urllib.request.Request(urlName, headers={'User-Agent': 'Mozilla/5.0'})
+		response = urllib.request.urlopen(req)
+		fileContents = response.read()
+		response.close()
+		f = open(file, "wb")
+		f.write(fileContents)
+		f.close()
 		bundle = addonHandler.AddonBundle(file)
 		if bundle.manifest["name"] == ourAddon.manifest['name']:
 			AddonFlow.checkCompatibility()
@@ -119,17 +122,23 @@ class AddonFlow(Thread):
 
 	def checkCompatibility():
 		if addonHandler.addonVersionCheck.isAddonCompatible(ourAddon):
-			AddonFlow.install()  # because is compatible
-		else:   # because is incompatible
+			# It is compatible, so install
+			AddonFlow.install()
+		# It is not compatible, so do not install and inform user
+		else:
 			# Translators: Message dialog box to inform user that the add-on is not compatible
 			gui.messageBox(_("This new version of this add-on is not compatible with your version of NVDA.\n The update process will be terminated."), ourAddon.manifest["summary"], style=wx.ICON_WARNING)
 			AddonFlow.doNothing()
 
 	def install():
-		ourAddon.requestRemove() # To remove the old version
-		addonHandler.installAddonBundle(bundle)  # to install the new version
-		shutil.rmtree(directory, ignore_errors=True)  # to delete the downloads folder
-		core.restart()  # to restart NVDA
+		# To remove the old version
+		ourAddon.requestRemove()
+		# to install the new version
+		addonHandler.installAddonBundle(bundle)
+		# to delete the downloads folder
+		shutil.rmtree(directory, ignore_errors=True)
+		# to restart NVDA
+		core.restart()
 
 	def doNothing():
 		pass

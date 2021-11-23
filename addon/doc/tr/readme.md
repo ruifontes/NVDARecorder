@@ -27,4 +27,4 @@ NVDA her açıldığında yeni bir sürüm kontrolü gerçekleştirilecektir.
 Bunu istemiyorsanız, NVDA, Tercihler, Ayarlar'a gidin ve eklenti kategorisinde onay kutusunun işaretini kaldırın.  
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.17/NVDARecorder-21.08.17.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.11/NVDARecorder-21.11.nvda-addon

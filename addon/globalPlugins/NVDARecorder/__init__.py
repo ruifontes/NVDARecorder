@@ -10,6 +10,7 @@ try:
 except ModuleNotFoundError:
 	import speech
 import speechViewer
+import core
 import ui
 import os
 import globalVars
@@ -40,16 +41,25 @@ def mySpeak(sequence, *args, **kwargs):
 			text += "\n"
 		contents += text
 
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	# Creating the constructor of the newly created GlobalPlugin class.
 	def __init__(self):
 		# Call of the constructor of the parent class.
 		super(GlobalPlugin, self).__init__()
+		# Avoid use in secure screens
 		if globalVars.appArgs.secure:
 			return
-		# For update process
+		# To allow waiting end of network tasks
+		core.postNvdaStartup.register(self.networkTasks)
+
+	def networkTasks(self):
+		# Calling the update process...
 		_MainWindows = Initialize()
 		_MainWindows.start()
+
+	def terminate(self):
+		core.postNvdaStartup.unregister(self.networkTasks)
 
 	@script(
 	# For translators: Message to be announced during Keyboard Help

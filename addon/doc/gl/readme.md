@@ -22,4 +22,4 @@ A verificación de nova versión executarase cada vez que NVDA se cargue.
 Se non queres isto, vai a NVDA, Preferencias, Opcións e na categoría do complemento desmarca a caixa de verificación.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.08.17/NVDARecorder-21.08.17.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.11/NVDARecorder-21.11.nvda-addon
