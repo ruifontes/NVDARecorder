@@ -7,39 +7,62 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wintenApps 16.07\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-08-17 04:30+0100\n"
-"PO-Revision-Date: 2021-09-22 01:03+0100\n"
-"Last-Translator: Rui Fontes  <rui.fontes@tiflotecnia.com>\n"
+"POT-Creation-Date: 2023-03-05 01:23+0000\n"
+"PO-Revision-Date: 2023-03-05 01:40+0000\n"
+"Last-Translator: Rui Fontes <rui.fontes@tiflotecnia.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:62
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\NVDARecorder\__init__.py:68
+msgid "Activate/deactivate recording on NVDARecorder"
+msgstr "激活/停用NVDARecorder的录制功能"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:82
 msgid "Recording stopped"
 msgstr "停止录音"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:66
+#: addon\globalPlugins\NVDARecorder\__init__.py:85
 msgid "Start recording"
 msgstr "开始录制"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:69
-msgid "Activate/deactivate recording on NVDARecorder"
-msgstr "激活停用NVDARecorder的录制功能"
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: addon\globalPlugins\NVDARecorder\__init__.py:93 buildVars.py:23
+msgid "NVDA recorder"
+msgstr "NVDA记录器"
+
+#. Translators: Static text announcing the results
+#: addon\globalPlugins\NVDARecorder\__init__.py:98
+msgid "Here is the recorded text:"
+msgstr "以下是记录的文本。"
+
+#. Translators: Name of button to open the TXT file folder
+#: addon\globalPlugins\NVDARecorder\__init__.py:109
+msgid "Open NVDARecord.txt's folder"
+msgstr "打开NVDARecord.txt的文件夹"
+
+#. Translators: Name of button that allows to copy results to clipboard
+#: addon\globalPlugins\NVDARecorder\__init__.py:114
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
 
 #. Translators: Message dialog box to ask user if wants to update.
-#: addon\globalPlugins\NVDARecorder\update.py:84
+#: addon\globalPlugins\NVDARecorder\update.py:95
 msgid ""
 "It is available a new version of this add-on.\n"
 " Do you want to update?"
 msgstr "這個附加元件有心的版本，您是否要更新？"
 
 #. Translators: Message dialog box to inform user that the add-on is not compatible
-#: addon\globalPlugins\NVDARecorder\update.py:114
+#: addon\globalPlugins\NVDARecorder\update.py:130
 msgid ""
 "This new version of this add-on is not compatible with your version of "
 "NVDA.\n"
@@ -47,24 +70,19 @@ msgid ""
 msgstr "這個附加元件的新版本不相容於您的NVDA版本，更新作業停止"
 
 #. Translators: Checkbox name in the configuration dialog
-#: addon\globalPlugins\NVDARecorder\update.py:133
+#: addon\globalPlugins\NVDARecorder\update.py:153
 msgid "Check for updates at startup"
 msgstr "啟動時檢查更新"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information found in Add-ons Manager.
-#: buildVars.py:23
-msgid "NVDA recorder"
-msgstr "NVDA记录器"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 #: buildVars.py:26
 msgid ""
-"Record in a text document all the speechs of NVDA, except in SayAll. Turn on/"
-"off with Alt+NumPad Plus."
-msgstr "在文本文档中记录NVDA的所有语音，除了SayAll。用Alt+NumPad减法打开关闭。"
+"Record in a text document all the speechs of NVDA, except in SayAll, and "
+"shows it in a dialog. Turn on/off with Alt+NumPad Plus."
+msgstr ""
+"在一个文本文件中记录NVDA的所有语音，除了SayAll，并在一个对话框中显示。用"
+"Alt+NumPad Plus打开/关闭。"
 
 #, fuzzy, python-brace-format
 #~ msgid ""

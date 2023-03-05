@@ -7,7 +7,11 @@
 
 ## Uso
 Este complemento serve para gravar nun documento de texto todo o que fale NVDA mentres o complemento estea activo.
-Unha vez a gravación se deteña, abrirase o documento de texto.
+Una vez finalizada la grabación, se guardará un documento de texto en el directorio de configuración de usuario de NVDA, y el texto grabado se mostrará en un diálogo.
+En este diálogo puedes:
+* Abrir el directorio de configuración de usuario de NVDA;
+* Copiar el texto grabado al portapapeles;
+* Cerrar el diálogo.
 
 Note: Non se grava o falado en LerTodo.
 
@@ -22,4 +26,4 @@ A verificación de nova versión executarase cada vez que NVDA se cargue.
 Se non queres isto, vai a NVDA, Preferencias, Opcións e na categoría do complemento desmarca a caixa de verificación.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.11/NVDARecorder-21.11.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon

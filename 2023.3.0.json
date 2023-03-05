@@ -1,0 +1,29 @@
+{
+	"addonId": "NVDARecorder",
+	"displayName": "NVDA recorder",
+	"URL": "https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon",
+	"description": "Record in a text document all the speechs of NVDA, except in SayAll, and shows it in a dialog. Turn on/off with Alt+NumPad Plus.",
+	"sha256": "d288adbe73ee39909104c722e63e099eeedc079d1b83394dc45c924fd1ec3ef9",
+	"homepage": null,
+	"addonVersionName": "2023.03",
+	"addonVersionNumber": {
+		"major": 2023,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Rui Fontes",
+	"sourceURL": "https://github.com/ruifontes/NVDARecorder",
+	"license": "GPL 2",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+}

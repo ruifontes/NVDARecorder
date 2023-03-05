@@ -7,7 +7,11 @@
 
 ## Utilização
 Este extra serve para gravar num documento de texto todas as falas do NVDA desde que o extra é activado até ser desactivado.
-Após parar a gravação, o documento de texto será aberto.
+Depois de parar a gravação, um documento de texto será salvo no diretório de configurações do usuário do NVDA, e o texto gravado é exibido num diálogo.
+Neste diálogo, pode:
+* Abrir o seu directório de configurações do NVDA;
+* Copiar o texto gravado para a área de transferência;
+* Fechar a caixa de diálogo.
 
 Nota: O que é falado em leitura contínua, não é gravado.
 
@@ -22,4 +26,4 @@ A verificação de existência de nova versão será executada cada vez que o NV
 Se não desejar que isso aconteça, vá ao menu do NVDA, Preferências, Configurações e na categoria do extra desmarque a caixa de verificação.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.11/NVDARecorder-21.11.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon

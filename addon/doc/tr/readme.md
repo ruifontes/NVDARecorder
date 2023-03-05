@@ -1,7 +1,3 @@
----
-title: NVDA Kaydedici
-...
-
 # NVDA Kaydedici#
 
 ## Bilgi
@@ -12,7 +8,11 @@ title: NVDA Kaydedici
 
 ## kullanım
 Bu eklenti, Kayıtaktifken NVDA'nın tüm konuşmalarını bir metin belgesine kaydetmeye yarar.  
-Kayıt durduktan sonra metin belgesi açılacaktır.  
+Kayıt durduktan sonra, NVDA kullanıcı yapılandırma dizinine bir metin belgesi kaydedilir ve kaydedilen metin bir iletişim kutusunda gösterilir.
+Bu iletişim kutusunda şunları yapabilirsiniz:
+* NVDA kullanıcı yapılandırma dizininizi açın;
+* Kaydedilen metni panoya kopyalayın;
+* İletişim kutusunu kapatabilirsiniz.
 
 Not: Sürekli konuş özelliğinde konuşulanlar kaydedilmez.  
 
