@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'NVDARecorder' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'NVDARecorder' '2023.03'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2023-06-12 10:38+0300\n"
+"PO-Revision-Date: 2023-06-12 10:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#. Translators: Message to be announced during Keyboard Help
+#: addon\globalPlugins\NVDARecorder\__init__.py:68
+msgid "Activate/deactivate recording on NVDARecorder"
+msgstr "Увімкнути/вимкнути запис у NVDARecorder"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:82
+msgid "Recording stopped"
+msgstr "Запис зупинено"
+
+#: addon\globalPlugins\NVDARecorder\__init__.py:85
+msgid "Start recording"
+msgstr "Почати запис"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: addon\globalPlugins\NVDARecorder\__init__.py:93 buildVars.py:23
+msgid "NVDA recorder"
+msgstr "NVDA recorder"
+
+#. Translators: Static text announcing the results
+#: addon\globalPlugins\NVDARecorder\__init__.py:98
+msgid "Here is the recorded text:"
+msgstr "Тут розміщено записаний текст:"
+
+#. Translators: Name of button to open the TXT file folder
+#: addon\globalPlugins\NVDARecorder\__init__.py:109
+msgid "Open NVDARecord.txt's folder"
+msgstr "Відкрити папку NVDARecord.txt"
+
+#. Translators: Name of button that allows to copy results to clipboard
+#: addon\globalPlugins\NVDARecorder\__init__.py:114
+msgid "Copy to clipboard"
+msgstr "Скопіювати в буфер обміну"
+
+#. Translators: Message dialog box to ask user if wants to update.
+#: addon\globalPlugins\NVDARecorder\update.py:95
+msgid ""
+"It is available a new version of this add-on.\n"
+" Do you want to update?"
+msgstr ""
+"Доступна нова версія цього додатка.\n"
+" Хочете оновити?"
+
+#. Translators: Message dialog box to inform user that the add-on is not compatible
+#: addon\globalPlugins\NVDARecorder\update.py:130
+msgid ""
+"This new version of this add-on is not compatible with your version of "
+"NVDA.\n"
+" The update process will be terminated."
+msgstr ""
+"Нова версія цього додатка несумісна з вашою версією NVDA.\n"
+" Процес оновлення буде перервано."
+
+#. Translators: Checkbox name in the configuration dialog
+#: addon\globalPlugins\NVDARecorder\update.py:153
+msgid "Check for updates at startup"
+msgstr "Перевіряти наявність оновлень під час запуску"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid ""
+"Record in a text document all the speechs of NVDA, except in SayAll, and "
+"shows it in a dialog. Turn on/off with Alt+NumPad Plus."
+msgstr ""
+"Записує в текстовий документ все, що промовляє NVDA, крім режиму «читати "
+"все», й показує його в діалозі. Вмикається й вимикається за допомогою "
+"Alt+додатковий плюс."
