@@ -20,11 +20,5 @@ Kaydı etkinleştirmek/devre dışı bırakmak için ALT + NumPad Artı tuşlar�
 Bu komut,  "Giriş hareketleri" iletişim kutusunda bulunan "Çeşitli" kategorisinde değiştirilebilir.  
 
 
-## Otomatik güncelleme  
 
-Bu eklenti otomatik güncelleme özelliği içerir.  
-NVDA her açıldığında yeni bir sürüm kontrolü gerçekleştirilecektir.  
-Bunu istemiyorsanız, NVDA, Tercihler, Ayarlar'a gidin ve eklenti kategorisinde onay kutusunun işaretini kaldırın.  
-
-
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/21.11/NVDARecorder-21.11.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon

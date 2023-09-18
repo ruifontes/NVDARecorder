@@ -19,11 +19,4 @@ Para activar/desactivar a gravación preme ALT + máis TecladoNumérico.
 Este atallo pódese modificar no diálogo "Xestos de entrada" na categoría "Miscelánea".
 
 
-## Actualización automática
-
-Este complemento inclúe unha característica de actualización automática.
-A verificación de nova versión executarase cada vez que NVDA se cargue.
-Se non queres isto, vai a NVDA, Preferencias, Opcións e na categoría do complemento desmarca a caixa de verificación.
-
-
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon

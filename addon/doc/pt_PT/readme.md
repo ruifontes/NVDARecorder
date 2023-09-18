@@ -20,11 +20,5 @@ Para activar/desactivar a gravação pressione Alt + tecla Mais do numérico.
 Este comando pode ser modificado no diálogo "Definir comandos" na categoria "Diversos".
 
 
-## Atualização automática
 
-Este extra inclui um recurso de atualização automática.
-A verificação de existência de nova versão será executada cada vez que o NVDA é carregado.
-Se não desejar que isso aconteça, vá ao menu do NVDA, Preferências, Configurações e na categoria do extra desmarque a caixa de verificação.
-
-
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon

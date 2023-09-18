@@ -10,6 +10,7 @@ try:
 except ModuleNotFoundError:
 	import speech
 import speechViewer
+import gui
 import core
 import ui
 import api
@@ -19,9 +20,7 @@ import globalVars
 import time
 from scriptHandler import script
 import addonHandler
-# For update process
-from . update import *
-# For translation
+# Start the translation process
 addonHandler.initTranslation()
 
 start = False
@@ -52,16 +51,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Avoid use in secure screens
 		if globalVars.appArgs.secure:
 			return
-		# To allow waiting end of network tasks
-		core.postNvdaStartup.register(self.networkTasks)
-
-	def networkTasks(self):
-		# Calling the update process...
-		_MainWindows = Initialize()
-		_MainWindows.start()
-
-	def terminate(self):
-		core.postNvdaStartup.unregister(self.networkTasks)
 
 	@script(
 	# Translators: Message to be announced during Keyboard Help

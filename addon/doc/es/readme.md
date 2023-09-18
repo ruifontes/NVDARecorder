@@ -18,11 +18,5 @@ Nota: Lo que se habla en lectura continua no se graba.
 Para activar/desactivar la grabación pulse ALT + NumPad Plus.
 Este comando puede modificarse en el cuadro de diálogo "Gestos de entrada" en la categoría "Miscelánea".
 
-## Actualización automática
 
-Este complemento incluye una función de actualización automática.
-La comprobación de una nueva versión se ejecutará cada vez que se cargue NVDA.
-Si no quieres esto, ve a NVDA, Preferencias, Opciones y en la categoría de complementos desmarca la casilla.
-
-
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.03/NVDARecorder-2023.03.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon
