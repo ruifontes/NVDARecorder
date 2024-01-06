@@ -10,6 +10,7 @@
 После остановки записи текстовый документ будет сохранен в каталоге конфигурации пользователя NVDA, а записанный текст отобразится в диалоговом окне.
 В этом диалоге вы можете:
 * Открыть каталог пользовательской конфигурации NVDA;
+* Open the NVDARecord.txt;
 * Скопировать записанный текст в буфер обмена;
 * Закрыть диалог.
 
@@ -25,4 +26,4 @@
 * [Русский язык от NVDA.RU](https://nvda.ru)
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon

@@ -1,4 +1,4 @@
-# NVDA Recorder#
+# NVDA Recorder
 
 ## Information
 * Author: Rui Fontes <rui.fontes@tiflotecnia.com> and  Ângelo Abrantes <ampa4374@gmail.com>
@@ -10,6 +10,7 @@ This add-on serves to record in a text document all speeches of NVDA while the a
 After recording stops, a text document will be saved in the NVDA user configuration directory, and the recorded text is shown in a dialog.
 In this dialog you can:
 * Open your NVDA user configuration directory;
+* Open the NVDARecord.txt;
 * Copy the recorded text to clipboard;
 * Close the dialog.
 
@@ -19,4 +20,4 @@ To activate/deactivate the recording Press ALT + NumPad Plus.
 This command can be modified in the "Input gestures" dialog in the "Miscellaneous" category.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon

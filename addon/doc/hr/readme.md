@@ -10,6 +10,7 @@ Ovaj dodatak služi za snimanje u tekstualni dokument svih NVDA govora dok je do
 Nakon što se snimanje zaustavi, tekstualni dokument će biti spremljen u direktoriju korisničke konfiguracije NVDA-a, a snimljeni tekst prikazan je u dijaloškom okviru.
 U ovom dijaloškom okviru možete:
 * Otvoriti svoj NVDA korisnički konfiguracijski direktorij;
+* Open the NVDARecord.txt;
 * Kopirati snimljeni tekst u međuspremnik;
 * Zatvoriti dijaloški okvir.
 
@@ -19,4 +20,4 @@ Za aktiviranje/deaktiviranje snimanja Pritisnite Alt + NumPad Plus.
 Ova se naredba može mijenjati u dijaloškom okviru "Ulazne geste" u kategoriji "Postavke".
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon

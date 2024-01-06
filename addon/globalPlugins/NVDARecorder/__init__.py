@@ -1,36 +1,40 @@
 # -*- coding: UTF-8 -*-
-# Copyright (C) 2021-2023 Rui Fontes <rui.fontes@tiflotecnia.com> and Ângelo Abrantes <ampa4374@gmail.com>
+# Copyright (C) 2021-2024 Rui Fontes <rui.fontes@tiflotecnia.com> and Ângelo Abrantes <ampa4374@gmail.com>
 # Based on the work of 高生旺 <coscell@gmail.com> with the same name
 # This file is covered by the GNU General Public License.
 
 # import the necessary modules.
 import globalPluginHandler
+import globalVars
+import core
+import api
 try:
 	import speech.speech as speech
 except ModuleNotFoundError:
 	import speech
 import speechViewer
-import gui
-import core
-import ui
-import api
-import os
 import wx
-import globalVars
+import gui
+import ui
+import os
+import ctypes
 import time
 from scriptHandler import script
 import addonHandler
 # Start the translation process
 addonHandler.initTranslation()
 
+# Global variables
 start = False
 oldSpeak = speech.speak
 contents = ""
 
-# In the original work the file was stored in a path not easily accessed by the normal user, due to translation of the folder name in, at least, Windows 10 in portuguese...
+# In the original work the file was stored in a path not easily accessed by the
+# normal user, due to translation of the folder name in, at least, Windows 10 in
+# portuguese...
 _NRIniFile = os.path.join(globalVars.appArgs.configPath,"NVDARecord.txt")
 
-def getSequenceText(sequence):
+def getSequenceText(sequence: speech.SpeechSequence) -> None:
 	return speechViewer.SPEECH_ITEM_SEPARATOR.join([x for x in sequence if isinstance(x, str)])
 
 def mySpeak(sequence, *args, **kwargs):
@@ -65,15 +69,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			with open(_NRIniFile, "w", encoding = "utf-8") as file:
 				file.write(contents)
 				file.close()
-				global recorded
-				recorded = contents
-				gui.mainFrame._popupSettingsDialog(ShowResults)
+			gui.mainFrame._popupSettingsDialog(ShowResults)
 			ui.message(_("Recording stopped"))
+			# Clean file for next record session...
 			contents = ""
 		else:
 			ui.message(_("Start recording"))
 			speech.speak = mySpeak
-
 
 class ShowResults(wx.Dialog):
 	def __init__(self, *args, **kwds):
@@ -88,7 +90,7 @@ class ShowResults(wx.Dialog):
 		sizer_1.Add(label_1, 0, 0, 0)
 
 		global contents
-		self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, recorded, size = (550, 350), style=wx.TE_MULTILINE | wx.TE_READONLY)
+		self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, contents, size = (550, 350), style=wx.TE_MULTILINE | wx.TE_READONLY)
 		sizer_1.Add(self.text_ctrl_1, 0, 0, 0)
 
 		sizer_2 = wx.StdDialogButtonSizer()
@@ -98,6 +100,11 @@ class ShowResults(wx.Dialog):
 		self.button_1 = wx.Button(self, wx.ID_ANY, _("Open NVDARecord.txt's folder"))
 		self.button_1.SetDefault()
 		sizer_2.Add(self.button_1, 0, 0, 0)
+
+		# Translators: Name of button to open the TXT file
+		self.button_2 = wx.Button(self, wx.ID_ANY, _("Open NVDARecord.txt"))
+		self.button_2.SetDefault()
+		sizer_2.Add(self.button_2, 0, 0, 0)
 
 		# Translators: Name of button that allows to copy results to clipboard
 		self.button_SAVE = wx.Button(self, wx.ID_ANY, _("Copy to clipboard"))
@@ -113,6 +120,7 @@ class ShowResults(wx.Dialog):
 
 		self.SetEscapeId(self.button_CLOSE.GetId())
 		self.Bind(wx.EVT_BUTTON, self.openFolder, self.button_1)
+		self.Bind(wx.EVT_BUTTON, self.openTXTFile, self.button_2)
 		self.Bind(wx.EVT_BUTTON, self.copyToClip, self.button_SAVE)
 		self.Bind(wx.EVT_BUTTON, self.quit, self.button_CLOSE)
 
@@ -123,6 +131,15 @@ class ShowResults(wx.Dialog):
 		self.Destroy()
 		event.Skip()
 		os.startfile(os.path.join(globalVars.appArgs.configPath))
+
+	def openTXTFile(self, event):
+		self.Destroy()
+		event.Skip()
+		# Opening the TXT file with the recorded messages
+		z = ctypes.windll.shell32.ShellExecuteW(
+			None, "open", _NRIniFile,
+			None, None, 10
+		)
 
 	def copyToClip(self, event):
 		event.Skip()

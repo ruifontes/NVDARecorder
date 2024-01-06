@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NVDARecorder\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2023-03-05 01:23+0000\n"
-"PO-Revision-Date: 2023-03-05 01:38+0000\n"
+"POT-Creation-Date: 2024-01-06 02:23+0000\n"
+"PO-Revision-Date: 2024-01-06 02:29+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -12,67 +12,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: Message to be announced during Keyboard Help
-#: addon\globalPlugins\NVDARecorder\__init__.py:68
+#: addon\globalPlugins\NVDARecorder\__init__.py:61
 msgid "Activate/deactivate recording on NVDARecorder"
 msgstr "Активировать / деактивировать запись в NVDARecorder"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:82
+#: addon\globalPlugins\NVDARecorder\__init__.py:73
 msgid "Recording stopped"
 msgstr "Запись остановлена"
 
-#: addon\globalPlugins\NVDARecorder\__init__.py:85
+#: addon\globalPlugins\NVDARecorder\__init__.py:77
 msgid "Start recording"
 msgstr "Включена запись"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
-#: addon\globalPlugins\NVDARecorder\__init__.py:93 buildVars.py:23
+#: addon\globalPlugins\NVDARecorder\__init__.py:84 buildVars.py:23
 msgid "NVDA recorder"
 msgstr "Регистратор NVDA"
 
 #. Translators: Static text announcing the results
-#: addon\globalPlugins\NVDARecorder\__init__.py:98
+#: addon\globalPlugins\NVDARecorder\__init__.py:89
 msgid "Here is the recorded text:"
 msgstr "Вот записанный текст:"
 
 #. Translators: Name of button to open the TXT file folder
-#: addon\globalPlugins\NVDARecorder\__init__.py:109
+#: addon\globalPlugins\NVDARecorder\__init__.py:100
 msgid "Open NVDARecord.txt's folder"
 msgstr "Откройте папку NVDARecord.txt"
 
+#. Translators: Name of button to open the TXT file
+#: addon\globalPlugins\NVDARecorder\__init__.py:105
+#, fuzzy
+#| msgid "Open NVDARecord.txt's folder"
+msgid "Open NVDARecord.txt"
+msgstr "Откройте папку NVDARecord.txt"
+
 #. Translators: Name of button that allows to copy results to clipboard
-#: addon\globalPlugins\NVDARecorder\__init__.py:114
+#: addon\globalPlugins\NVDARecorder\__init__.py:110
 msgid "Copy to clipboard"
 msgstr "Копировать в буфер"
-
-#. Translators: Message dialog box to ask user if wants to update.
-#: addon\globalPlugins\NVDARecorder\update.py:95
-msgid ""
-"It is available a new version of this add-on.\n"
-" Do you want to update?"
-msgstr "Доступна новая версия этого дополнения. Вы хотите обновить?"
-
-#. Translators: Message dialog box to inform user that the add-on is not compatible
-#: addon\globalPlugins\NVDARecorder\update.py:130
-msgid ""
-"This new version of this add-on is not compatible with your version of "
-"NVDA.\n"
-" The update process will be terminated."
-msgstr ""
-"Эта новая версия несовместима с вашей версией NVDA. Процесс обновления будет "
-"прекращен."
-
-#. Translators: Checkbox name in the configuration dialog
-#: addon\globalPlugins\NVDARecorder\update.py:153
-msgid "Check for updates at startup"
-msgstr "Проверять обновления при запуске"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -83,3 +68,19 @@ msgid ""
 msgstr ""
 "Записывает в текстовый документ всю речь NVDA, кроме SayAll, и показывает ее "
 "в диалоге. Включение/выключение с помощью Alt+NumPad Plus."
+
+#~ msgid ""
+#~ "It is available a new version of this add-on.\n"
+#~ " Do you want to update?"
+#~ msgstr "Доступна новая версия этого дополнения. Вы хотите обновить?"
+
+#~ msgid ""
+#~ "This new version of this add-on is not compatible with your version of "
+#~ "NVDA.\n"
+#~ " The update process will be terminated."
+#~ msgstr ""
+#~ "Эта новая версия несовместима с вашей версией NVDA. Процесс обновления "
+#~ "будет прекращен."
+
+#~ msgid "Check for updates at startup"
+#~ msgstr "Проверять обновления при запуске"

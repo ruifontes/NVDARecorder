@@ -11,6 +11,7 @@ Bu eklenti, Kayıtaktifken NVDA'nın tüm konuşmalarını bir metin belgesine k
 Kayıt durduktan sonra, NVDA kullanıcı yapılandırma dizinine bir metin belgesi kaydedilir ve kaydedilen metin bir iletişim kutusunda gösterilir.
 Bu iletişim kutusunda şunları yapabilirsiniz:
 * NVDA kullanıcı yapılandırma dizininizi açın;
+* Open the NVDARecord.txt;
 * Kaydedilen metni panoya kopyalayın;
 * İletişim kutusunu kapatabilirsiniz.
 
@@ -21,4 +22,4 @@ Bu komut,  "Giriş hareketleri" iletişim kutusunda bulunan "Çeşitli" kategori
 
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2023.09.18/NVDARecorder-2023.09.18.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon
