@@ -20,4 +20,4 @@ Para activar/desactivar a gravación preme ALT + máis TecladoNumérico.
 Este atallo pódese modificar no diálogo "Xestos de entrada" na categoría "Miscelánea".
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.03.22/NVDARecorder-2024.03.22.nvda-addon

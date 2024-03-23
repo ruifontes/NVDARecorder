@@ -20,4 +20,4 @@ Za aktiviranje/deaktiviranje snimanja Pritisnite Alt + NumPad Plus.
 Ova se naredba može mijenjati u dijaloškom okviru "Ulazne geste" u kategoriji "Postavke".
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.03.22/NVDARecorder-2024.03.22.nvda-addon

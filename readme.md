@@ -20,4 +20,4 @@ To activate/deactivate the recording Press ALT + NumPad Plus.
 This command can be modified in the "Input gestures" dialog in the "Miscellaneous" category.
 
 
-[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.01.06/NVDARecorder-2024.01.06.nvda-addon
+[1]: https://github.com/ruifontes/NVDARecorder/releases/download/2024.03.22/NVDARecorder-2024.03.22.nvda-addon

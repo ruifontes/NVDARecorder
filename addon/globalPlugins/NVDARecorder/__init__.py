@@ -90,6 +90,7 @@ class ShowResults(wx.Dialog):
 		sizer_1.Add(label_1, 0, 0, 0)
 
 		global contents
+		self.contents = contents
 		self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, contents, size = (550, 350), style=wx.TE_MULTILINE | wx.TE_READONLY)
 		sizer_1.Add(self.text_ctrl_1, 0, 0, 0)
 
@@ -143,8 +144,9 @@ class ShowResults(wx.Dialog):
 
 	def copyToClip(self, event):
 		event.Skip()
+		self.Destroy()
 		# Copy result to clipboard
-		api.copyToClip(recorded)
+		api.copyToClip(self.contents)
 
 	def quit(self, event):
 		self.Destroy()
